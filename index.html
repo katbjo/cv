@@ -13,28 +13,43 @@
   <style>
     * {
       font-family: montserrat;
-      color: #222;
+      color: #211E0E;
     }
 
     body {
       max-width: 900px;
       margin: auto;
-      background-color: #e5e5e5;
-      color: #222;
+      background-color: #F7F7F3;
+      color: #211E0E;
     }
     .my-name {
       font-weight: 300;
       text-align: right;
       font-size: 60px;
+      color: #594E23;
+    }
+    .my-links {
+      margin: 0 -8px;
+    }
+    .info-item {
+      margin: 8px;
+      font-size: 16px;
+      color: #594E23;
+    }
+    .info-item a, .info-item span, .info-item p {
+      padding-left: 4px;
+      color: #594E23;
     }
     i[class*='lni']{
       font-size: 20px;
+
+      color: #594E23;
     }
     .job {
       flex-wrap: nowrap !important;
     }
     .job p {
-      margin: 4px;
+      margin: 2px;
     }
     .job .years {
       flex: 0 0 100px;
@@ -42,19 +57,14 @@
     .job .job-data {
       flex: 1 1 auto;
     }
-    .info-item {
-      margin: 8px;
-      font-size: 16px;
-    }
-    .info-item a, .info-item span, .info-item p {
-      padding-left: 4px;
-    }
+    
     .extra-info {
       padding-left: 30px;
     }
     /* utils */
     .bold {
       font-weight: 700;
+      color: #594E23;
     }
     .flex {
       display: flex;
@@ -78,7 +88,7 @@
 
 <body>
   <h1 class="my-name">Katrín <span class="bold">Björnsdóttir</span></h1>
-  <div class="flex">
+  <div class="flex my-links">
     <div class="info-item">
       <i class="lni-home"></i><p class="inline">Reykjavík, Iceland</p>
     </div>
@@ -86,13 +96,13 @@
       <i class="lni-envelope"></i><p class="inline">katbjo@gmail.com</p>
     </div>
     <div class="info-item">
-      <i class="lni-mobile"></i><a href="tel:+3548448829">844-8829</a>
+      <i class="lni-mobile"></i><a href="tel:+3548448829">+ 354 844-8829</a>
     </div>
     <div class="info-item">
       <i class="lni-github"></i><a href="https://github.com/katbjo">katbjo</a>
     </div>
     <div class="info-item">
-      <i class="lni-linkedin"></i><a href="www.linkedin.com/in/katrín-björnsdóttir-9a139a12b">me</a>
+      <i class="lni-linkedin"></i><a href="www.linkedin.com/in/katbjo">katbjo</a>
     </div>
     <div class="info-item">
       <i class="lni-twitter"></i><a href="https://twitter.com/katrin355">@katrin355</a>
@@ -101,7 +111,7 @@
   </div>
   <h2>EMPLOYMENT</h2>
   <div class="flex job">
-    <div class="years"><p><b>2018 - 2019</b></p></div>
+    <div class="years"><p><b>2018-2019</b></p></div>
     <div class="job-data">
       <p class="job-title"><b>United Nations University Land Restoration Training Programme</b>
         <br><span class="extra-info">Project manager - further information about the programme <a href="http://www.unulrt.is/en/about-unu-lrt/">here</a>.
@@ -118,12 +128,12 @@
     </div>
   </div>
   <div class="flex job">
-    <div class="years"><p><b>2017 - 2018</b></p></div>
+    <div class="years"><p><b>2017-2018</b></p></div>
     <div class="job-data">
       <p class="title mb-0"><b>University of Iceland</b></p>
       <ul class="extra-info m-0" style="padding-left:35px">
-          <li>Field assistant</li>
-          <li>Courses: Ecology for undergraduates (LÍF311G), Field course for undergraduates (LÍF536G) and Ecology for graduates (LÍF505M)</li>
+          Teaching assistant
+          <br>Courses: Ecology for undergraduates (LÍF311G), Field course for undergraduates (LÍF536G) and Ecology for graduates (LÍF505M)
         </ul>
       </div>
     </div>
@@ -131,32 +141,96 @@
       <div class="years"><p><b>2015-2018</b></p></div>
       <div class="job-data">
         <p class="title mb-0"><b>University of Iceland</b></p>
-        <p class="extra-info"><b>Field assistant</b>in Iceland and Svalbard, collecting data on plant community changes and changes in soil processes in response to climate warming and grazing. 
-          <br> responsible: Prof Ingibjörg Svala Jónsdóttir and Assoc. Prof. Isabel C. Barrio
+        <p class="extra-info"><b>Field assistant</b> in Iceland and Svalbard, collecting data on plant community changes and changes in soil processes in response to climate warming and grazing. 
+          <br> Project responsible: Prof. Ingibjörg Svala Jónsdóttir and Assoc. Prof. Isabel C. Barrio
           </p>
         <p class="extra-info"><b>Lab assistant</b>
-          working on a pilot experiment, measuring the alle-lopathic impacts of Empetrum nigrum on seed germination and plant growth in degraded ecosystems in Iceland. 
-          Project responsible: Prof. Ingibjörg Svala Jónsdóttir
+          working on a pilot experiment, measuring the allelopathic impacts of <i>Empetrum nigrum</i> on seed germination and plant growth in degraded ecosystems in Iceland. 
+          <br>Project responsible: Prof. Ingibjörg Svala Jónsdóttir
           </p>
         <p class="extra-info"><b>Lab assistant</b>
           working on a seed germination experiment in an eroded ecosystem in Iceland. 
-          Project responsible: Bryndís Marteinsdóttir
+          <br>Project responsible: Bryndís Marteinsdóttir
         </p>
       </div>
     </div>
     <div class="flex job">
         <div class="years"><p><b>2016-2017</b></p></div>
         <div class="job-data">
-          <p class="title"><b>Elding whale watching</b><br><span class="extra-info">Teaching assistant
-              <br> Course: Flux of Matter and Energy from Sea to Land (AB-322)
+          <p class="title"><b>Elding whale watching</b><br><span class="extra-info">Whale watching guide in Faxaflói, Iceland.
             </span> </p>
         </div>
       </div>
+      <div class="flex job">
+          <div class="years"><p><b>2010-2019</b></p></div>
+          <div class="job-data">
+            <p class="title"><b>Gísli Björnsson ehf.</b><br><span class="extra-info"> Personal assistant for a mentally disabled man.
+              </span> </p>
+          </div>
+        </div>
+        
+  <h2>EDUCATION</h2>
+  <div class="flex job">
+    <div class="years"><p><b>2016-2018</b></p></div>
+    <div class="job-data">
+      <p class="job-title"><b>M.Sc. biology. University of Iceland</b>
+              <br><span class="extra-info">Focus: Terrestrial ecology, climate warming, herbivory, soil dynamics, plant communities, Arctic ecosystems.
+              <br> Thesis title: Decomposition responses to climate warming and sheep grazing in the high and sub-Arctic.
+              <br> Advisors: Prof. Ingibjörg Svala Jónsdóttir & Assoc. Prof. Isabel C. Barrio.
+              </div>
+            </div>
+            <div class="flex job">
+                <div class="years"><p><b>2012-2015</b></p></div>
+                <div class="job-data">
+                  <p class="job-title"><b>B.Sc. biology. University of Iceland</b>
+                          </div>
+                        </div>
+  
+  <h2>ADDITIONAL TRAINING</h2>
+  <div class="flex job">
+    <div class="years"><p><b>2018, July</b></p></div>
+    <div class="job-data">
+      <p class="job-title"><b>TraitTrain – International Plant Functional Traits Course</b>
+              <br><span class="extra-info">4 ETSC field course, 16-27 July 2018 in Svalbard - further information <a href="https://biopraksis.w.uib.no/category/traittrain/">here</a>.
+              </div>
+            </div>
+            <div class="flex job">
+                <div class="years"><p><b>2017, July</b></p></div>
+                <div class="job-data">
+                  <p class="job-title"><b>University Centre in Svalbard (UNIS)</b>
+                    <br><span class="extra-info"> 10 ETSC course in Arctic Plant Ecology 
+
+                         
+                    </span>
+                          </div>
+                        </div>
+
   <h2>CONFERENCE PRESENTATIONS</h2>
   <h3>Conference talks</h3>
   <ul>
     <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2018, February). Decomposition responses to climate warming in the high and sub-Arctic. Conducted at the Nordic Oikos Conference, Trondheim, Norway.</li>
     <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2017, October). Decomposition responses to climate warming and sheep grazing in the high and sub-Arctic. Conducted at the Icelandic Biology Conference, Reykjavík, Iceland.</li>
   </ul>
+  <h3>Poster presentations</h3>
+  <ul>
+    <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2018, April). Decomposition responses to climate warming in the high and sub-Arctic. Poster presented at the 22nd ITEX meeting, Stirling, Scotland. [Best poster award].</li>
+    <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2017, March). Decomposition responses to climate warming and sheep grazing in the high and sub-Arctic. Poster presented at the Icelandic Ecological Conference, Hólar, Iceland. [Best poster award].</li>
+  </ul>
+  <div>
+  </div>
+
+  <h2>PUBLICATIONS</h2>
+  <ul>
+    <li>Mulloy, TA, Barrio, IC, <b>Björnsdóttir, K</b>, Jónsdóttir, IS, Hik, DS. 2019. Fertilisers mediate the short-term effects of sheep grazing in the Icelandic highlands. Icelandic Agricultural Sciences 32, 75–85.</li>
+    <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2017, October). Decomposition responses to climate warming and sheep grazing in the high and sub-Arctic. Conducted at the Icelandic Biology Conference, Reykjavík, Iceland.</li>
+  </ul>
+     
+  <ul>
+    <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2018, April). Decomposition responses to climate warming in the high and sub-Arctic. Poster presented at the 22nd ITEX meeting, Stirling, Scotland. [Best poster award].</li>
+    <li>Björnsdóttir, K, Barrio, I, Jónsdóttir, I. (2017, March). Decomposition responses to climate warming and sheep grazing in the high and sub-Arctic. Poster presented at the Icelandic Ecological Conference, Hólar, Iceland. [Best poster award].</li>
+  </ul>
+  <div>
+  </div>
+
 </body>
 </html>
