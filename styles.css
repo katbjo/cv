@@ -1,0 +1,113 @@
+* {
+    font-family: montserrat;
+    color: #1D0B00;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    background-color: #F7F7F3;
+    color: #1D0B00;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+li {
+    margin: 4px 0
+}
+
+.my-name {
+    font-weight: 300;
+    text-align: right;
+    font-size: 60px;
+    color: #9E3C00;
+}
+
+.my-links {
+    margin: 0 -8px;
+}
+
+.info-item {
+    margin: 8px;
+    font-size: 16px;
+    color: #9E3C00;
+}
+
+.info-item a,
+.info-item span,
+.info-item p {
+    padding-left: 4px;
+    color: #9E3C00;
+}
+
+i[class*='lni'] {
+    font-size: 20px;
+}
+
+.info-item i[class*='lni'] {
+    color: #9E3C00;
+}
+
+.job {
+    flex-wrap: nowrap !important;
+}
+
+.job p {
+    margin: 2px;
+}
+
+.job .years {
+    flex: 0 0 100px;
+}
+
+.job .job-data {
+    flex: 1 1 auto;
+}
+
+.extra-info {
+    padding-left: 30px;
+}
+
+
+/* utils */
+
+.bold {
+    font-weight: 700;
+    color: #9E3C00;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m-1 {
+    margin: 4px;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+.inline {
+    display: inline;
+}
+
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+}
