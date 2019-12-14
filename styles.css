@@ -4,10 +4,14 @@
 }
 
 body {
-    max-width: 900px;
-    margin: auto;
     background-color: #F7F7F3;
     color: #1D0B00;
+    margin: 0;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
     padding-bottom: 2rem;
     padding-left: 1rem;
 }
@@ -20,7 +24,12 @@ li {
     font-weight: 300;
     text-align: right;
     font-size: 60px;
-    color: #9E3C00;
+    color: #594E23;
+}
+
+.my-name-index {
+    font-weight: 700;
+    font-size: 50px;
 }
 
 .my-links {
@@ -30,14 +39,14 @@ li {
 .info-item {
     margin: 8px;
     font-size: 16px;
-    color: #9E3C00;
+    color: #594E23;
 }
 
 .info-item a,
 .info-item span,
 .info-item p {
     padding-left: 4px;
-    color: #9E3C00;
+    color: #594E23;
 }
 
 i[class*='lni'] {
@@ -45,7 +54,7 @@ i[class*='lni'] {
 }
 
 .info-item i[class*='lni'] {
-    color: #9E3C00;
+    color: #594E23;
 }
 
 .job {
@@ -73,7 +82,7 @@ i[class*='lni'] {
 
 .bold {
     font-weight: 700;
-    color: #9E3C00;
+    color: #594E23;
 }
 
 .flex {
@@ -89,8 +98,20 @@ i[class*='lni'] {
     margin: 0px;
 }
 
+.m-3 {
+    margin: 16px;
+}
+
 .mb-0 {
     margin-bottom: 0 !important;
+}
+
+.mb-2 {
+    margin-bottom: 8px !important;
+}
+
+.mt-0 {
+    margin-top: 0px;
 }
 
 .mt-2 {
@@ -103,6 +124,11 @@ i[class*='lni'] {
 
 .inline {
     display: inline;
+}
+
+.justified {
+    text-align: justify;
+    hyphens: auto;
 }
 
 @media print {

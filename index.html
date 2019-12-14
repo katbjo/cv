@@ -10,10 +10,127 @@
 </head>
 
 <body>
-
-    <h1>Hello world, this is my portfolio</h1>
-    <p>I am Katrín Björnsdóttir a biologist with a special interest in plant ecology north of the wall</p>
-    <p><a href="./cv.html">HERE</a> is my CV, please read with coution, it is indeed very 🔥🔥🔥</p>
+    <style>
+         :root {
+            --content-width: 900px;
+            --link-heigt: 45px;
+            --half-link-height: calc(var(--link-heigt) / 2)
+        }
+        
+        @media only screen and (max-width: 1080px) {
+             :root {
+                --content-width: 720px;
+            }
+            .profile-img {
+                align-self: flex-start;
+                margin-top: 46px;
+            }
+        }
+        
+        @media only screen and (max-width: 870px) {
+             :root {
+                --content-width: 520px;
+            }
+        }
+        
+        @media only screen and (max-width: 599px) {
+            .profile-img {
+                margin: 16px;
+            }
+            .profile-info {
+                width: 100%;
+                margin: 0px;
+            }
+            .justified {
+                text-align: left;
+            }
+        }
+        
+        @media only screen and (min-width: 600px) {
+            .card-between {
+                max-width: var(--content-width);
+                margin: -200px auto 0px auto;
+                overflow: visible;
+            }
+            .banner {
+                --x: calc(100vw - var(--content-width));
+                --y: calc(var(--x) / 2);
+                width: calc(var(--y) + var(--content-width));
+            }
+            .profile {
+                flex-wrap: nowrap;
+                align-items: center;
+                width: var(--content-width);
+            }
+            .profile-img {
+                margin-left: -75px;
+            }
+        }
+        
+        .card-between {
+            position: relative;
+        }
+        
+        .banner {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            background-color: rgba(89, 78, 35, 0.8);
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .profile-img img {
+            border-radius: 5px;
+            -webkit-box-shadow: 20px 22px 34px -9px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 20px 22px 34px -9px rgba(0, 0, 0, 0.5);
+            box-shadow: 20px 22px 34px -9px rgba(0, 0, 0, 0.5);
+        }
+        
+        .profile-info * {
+            color: #FFF;
+            align-self: flex-start;
+        }
+        
+        .my-cv {
+            position: absolute;
+            right: 0%;
+            top: calc(100% - var(--half-link-height));
+            height: var(--link-heigt);
+            background-color: burlywood;
+            padding: 0px 10px;
+            margin-right: 1rem;
+            border-radius: 5px;
+            -webkit-box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .my-cv>a {
+            line-height: var(--link-heigt);
+            font-weight: 700;
+            font-size: 18px;
+        }
+    </style>
+    <img src="./assets/images/saxopp_3.jpg" alt="My favorite plants in the arctic" style="width: 100%;">
+    <div class="card-between">
+        <div class="banner">
+            <div class="profile flex m-3">
+                <div class="profile-img" style="height: auto">
+                    <img src="./assets/images/Kata_3.jpg" alt="me" style="width: 150px;">
+                </div>
+                <div class="profile-info m-3">
+                    <small>Welcome to the portfolio page of</small>
+                    <h1 class="mt-0 mb-2 my-name-index">KATRÍN BJÖRNSDÓTTIR</h1>
+                    <p class="justified">Growing up in Iceland most definitely shaped the passion that I have for ecology and environ&shy;mental conservation. Although growing up in the small city of Reykjavík, as a child I was always fascinated by the country side and the
+                        great wilderness that our country offers. Choosing the field of biology for my studies therefore came natural to me. I recently graduated with a Master’s degree in terrestrial ecology from the University of Iceland.</p>
+                    <p><i>Below you can find a link to my CV</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="my-cv">
+            <a href="./cv.html">My CV</a>
+        </div>
+    </div>
 </body>
 
 </html>
