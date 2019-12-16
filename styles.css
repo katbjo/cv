@@ -14,6 +14,7 @@ section {
   margin: auto;
   padding-bottom: 2rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 li {
@@ -33,6 +34,7 @@ li {
   text-align: right;
   font-size: 60px;
   color: #594E23;
+  margin-bottom: 0.5em;
 }
 
 .my-name-index {
@@ -96,6 +98,19 @@ i[class*='lni'] {
 }
 
 
+/* publications */
+
+.header-publications {
+  font-weight: 300;
+  text-align: left;
+  font-size: 60px;
+  color: #594E23;
+  margin-bottom: 0.5em;
+}
+
+.publication-text {}
+
+
 /* utils */
 
 .bold {
@@ -108,12 +123,20 @@ i[class*='lni'] {
   flex-wrap: wrap;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
 
 .between {
   justify-content: space-between;
+}
+
+.align-end {
+  align-items: flex-end;
 }
 
 .m-1 {
@@ -134,6 +157,10 @@ i[class*='lni'] {
 
 .mb-2 {
   margin-bottom: 8px !important;
+}
+
+.mb-3 {
+  margin-bottom: 16px !important;
 }
 
 .mt-0 {
@@ -179,9 +206,16 @@ i[class*='lni'] {
   font-weight: 900;
 }
 
+.font-18 {
+  font-size: 18px;
+}
+
 @media print {
   .no-print,
   .no-print * {
     display: none !important;
+  }
+  .social i {
+    color: black !important;
   }
 }
